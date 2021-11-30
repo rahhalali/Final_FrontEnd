@@ -1,0 +1,88 @@
+.navbar{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100vw;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #eae6f0;
+    z-index: 10;
+    background-color: white;
+}
+.logo{
+    width: 300px;
+    height: 70px;
+    margin-left: 1%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.Btns{
+    margin-right: 1%;
+    width: 30%;
+}
+
+.Btns .Btn-inner{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.Btns .Btn-inner button{
+    padding :12px;
+    font-size: 15px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    color: #742f8b;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+.btn1{
+    margin-right: 2%;
+}
+.Btns .Btn-inner .btn1 button.contact-us{
+   background-color: unset;
+    transition: color 300ms ease-in-out;
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.Btns .Btn-inner .btn1 button.contact-us::before{
+    content: 'El-Royal@royal.com' '\2003'  '\2003' '+961-70146434';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #52006d;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.Btns .Btn-inner .btn1 button.contact-us:hover,.Btns .Btn-inner .btn1 button.contact-us:focus{
+color: white;
+}
+.Btns .Btn-inner .btn1 button.contact-us:hover::before,
+.Btns .Btn-inner .btn1 button.contact-us:focus::before  {
+    transform: scaleX(1);
+}
+
+.Btns .Btn-inner .btn2 button.booking{
+   background-color: #e6d9e9;
+}
+.Btns .Btn-inner .btn2 button.booking:hover{
+    transition: 0.5s;
+    background-color: purple;
+    color: white;
+}

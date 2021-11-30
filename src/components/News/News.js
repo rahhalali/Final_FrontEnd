@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Navbar from "../Navbar/Navbar";
 function News(props) {
     return (
         <div>
-            News
+            <Navbar />
         </div>
     );
 }

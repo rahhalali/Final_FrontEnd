@@ -1,0 +1,119 @@
+footer{
+    height: 7.5vh;
+    width: 100vw;
+    border-top: 2px solid #eae6f0;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.footer-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-inner{
+    width: 97%;
+    margin: 0 auto;
+}
+.facebook-icons{
+    color: purple;
+    display: inline-block;
+    padding:3px;
+    width: 30%;
+    text-align: center;
+}
+.facebook-icons .icons-inner .icon:hover{
+    background-color: purple;
+    cursor: pointer;
+    color: white;
+}
+.facebook-icons .icons-inner a{
+    color: purple;
+}
+.icons-inner{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.facebook-icons .icon{
+    font-size: 23px;
+    padding:3px;
+}
+.footer-inner .contain{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4px;
+}
+.footer-inner .scrolling{
+    margin-top: 4px;
+    width:3.5%;
+    border:2px solid gray;
+    border-radius: 13px;
+    height: 40px;
+}
+.footer-inner .contain  p{
+    color: purple;
+    font-size: 14px;
+    margin-top: 4px;
+}
+.footer-inner .contain{
+    text-align: center;
+}
+.footer-inner .scrolling{
+    margin:auto;
+}
+.footer-inner .scrolling .scrolling-inner{
+    width: 4px;
+    height: 10px;
+    margin:auto;
+    background-color: gray;
+    position: relative;
+    top: 4px;
+    animation: scrolling 2s infinite;
+}
+@keyframes scrolling {
+    0%{
+        opacity: 0;
+        top: 5px;
+    }
+    5%{
+        opacity: 0.5;
+        top: 8px;
+    }
+    10%{
+        opacity: 0.8;
+        top: 9px;
+    }
+    20%{
+        opacity: 0.6;
+        top: 10px;
+    }
+    25%{
+        opacity: 0.4;
+        top: 12px;
+    }
+}
+.footer-inner .events{
+    width: 30%;
+    margin-top: 0.5%;
+}
+.footer-inner .events .events-inner{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-inner .events .events-inner  a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-inner .events .events-inner .ihg a{
+    color: gray;
+    font-weight: bold;
+}
+
