@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import './Links.css'
 function Links(props) {
     return (
@@ -7,13 +7,13 @@ function Links(props) {
             <div className="inner-links">
                 <ul className="ul-links">
                     <li>
-                        <NavLink exact to="/" activeClassName="active">Home</NavLink>
+                        <Link  to="/" >Home</Link>
                     </li>
                     <li>
-                        <NavLink exact to="/thehotel" activeClassName="active">The Hotel</NavLink>
+                        <Link  to="/thehotel" >The Hotel</Link>
                     </li>
                     <li>
-                        <NavLink exact to="/news" aactiveClassName="active">News</NavLink>
+                        <Link  to="/news" >News</Link>
                     </li>
                 </ul>
             </div>

@@ -5,38 +5,6 @@
     border-bottom: 1px solid #eae6f0;
 }
 
-/*.links .inner-links{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    height: 100%;*/
-/*    width: 50%;*/
-/*    margin:0 auto;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*}*/
-/*.links .inner-links ul{*/
-/*    width: 35%;*/
-/*    margin:0 auto;*/
-/*}*/
-/*.links .inner-links .ul-links a{*/
-/*    text-decoration: none;*/
-/*    display: inline-block;*/
-/*    height: 100%;*/
-/*    font-size: 20px;*/
-/*    padding: 20px;*/
-/*}*/
-/*.links .inner-links .ul-links a:hover{*/
-/*    border-top: 1px solid purple;*/
-/*}*/
-/*.links .inner-links .ul-links li{*/
-/*    list-style: none;*/
-/*}*/
-/*.links .inner-links .ul-links li{*/
-/*    display: inline;*/
-/*}*/
-
 ul.ul-links{
     list-style: none;
     display: flex;
@@ -46,12 +14,6 @@ ul.ul-links{
     margin:0 auto 20px auto;
     height: auto;
 }
-
-
-/*ul.ul-links a:hover{*/
-/*    border-top: 1px solid purple;*/
-/*    transition: 0.5s ease-out;*/
-/*}*/
 
 ul.ul-links a{
     text-decoration: none;
@@ -80,5 +42,4 @@ ul.ul-links li:before {
 }
 
 ul.ul-links li:before{ transform-origin: 100% 50%; }
-
 ul.ul-links li:hover:before{ transform: scaleX(1); transform-origin:   0% 50%; }

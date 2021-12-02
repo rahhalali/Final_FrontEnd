@@ -1,0 +1,88 @@
+.departments{
+    overflow: hidden;
+}
+.boxes{
+    width: 90%;
+    margin:10px auto 5px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "suite suite suite resto resto spa"
+                         "suite suite suite meeting meeting art";
+    grid-auto-rows: 250px;
+}
+.boxes .div{
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.div img {
+    width: 100%;
+    height: 100%;
+}
+.div img{
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1.2);
+}
+.div:hover img{
+    filter: blur(0);
+    transform: scale(1);
+}
+
+
+.boxes .div .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(83,0,110, 0.4);
+    font-size: 15px;
+    opacity: 0
+}
+.boxes .div .overlay span{
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+.boxes > .div1{
+    grid-area: suite;
+}
+.boxes > .div2{
+    grid-area: resto;
+    background-color: #03a9f4;
+}
+.boxes > .div3{
+    grid-area: meeting;
+    background-color: yellow;
+}
+.boxes > .div4{
+    grid-area: spa;
+    background-color: blue;
+}
+.boxes > .div5{
+    grid-area: art;
+    height: auto;
+    background-color: springgreen;
+}
+
+.boxes .div:hover .overlay {
+    opacity: 1
+}
+
+.head .header{
+    font-family: 'Yellowtail', cursive;
+    color: purple;
+    font-size: 50px;
+}
+.head{
+    text-align: center;
+    margin:5%;
+}

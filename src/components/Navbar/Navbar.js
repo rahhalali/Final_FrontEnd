@@ -1,14 +1,16 @@
 import React from 'react';
 import './Navbar.css'
-import Image from '../Images/Le Royal.png'
+import Image from '../Images/NewRoyal.png'
 import Links from "../Links/Links";
-function Navbar(props) {
+import {Link} from "react-router-dom";
+function Navbar() {
     return (
         <div className="navbar" >
         <nav>
             <div className="logo">
-                <img  src={Image}
-                      alt="Logo"/>
+                <Link to='/'><img  src={Image}
+                                   alt="Logo"
+                /></Link>
             </div>
             <div className="Btns">
                 <div className="Btn-inner">
