@@ -1,0 +1,10 @@
+.title-head{
+    text-align: center;
+    margin-top:4%;
+    margin-bottom: 2%;
+}
+.title-head .header{
+    font-family: 'Yellowtail', cursive;
+    color: purple;
+    font-size: 50px;
+}

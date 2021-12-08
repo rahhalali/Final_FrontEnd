@@ -25,42 +25,31 @@ label {
   color: #fff;
   text-align: center;
 }
-.box .inputbox {
-  position: relative;
-}
 .box .inputbox input {
   width: 100%;
   padding: 10px 0;
   font-size: 15px;
   color: #fff;
   letter-spacing: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   outline: none;
   background: transparent;
   border-bottom: 1px solid white;
 }
+
 .box .inputbox label {
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 10px 0;
-  font-size: 15px;
-  color: #fff;
+  font-size: 25px;
+  color: #03a9f4;
   pointer-events: none;
   transition: 1s;
 }
 
-.box .inputbox input:focus ~ label,
-.box .inputbox input:valid ~ label {
-  top: -24px;
-  left: 0;
-  color: #03a9f4;
-  font-size: 18px;
-}
 .box .inputbox p {
   color: white;
-  margin-top: 0;
+  margin-bottom: 2%;
+  font-size: 20px;
 }
 .box input[type="submit"] {
   background: transparent;
@@ -70,6 +59,7 @@ label {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 12px;
+  margin-top: 4%;
 }
 video {
   position: absolute;

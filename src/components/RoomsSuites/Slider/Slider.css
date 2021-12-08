@@ -1,0 +1,15 @@
+.rooms-suites-slider{
+    width: 100%;
+    margin:2% auto 0 auto;
+    overflow: hidden;
+    height: 80vh;
+}
+.Images{
+    width: 100vw;
+    height: 80vh;
+}
+.rooms-suites-slider img{
+    width: 100%;
+    height: 100%;
+
+}

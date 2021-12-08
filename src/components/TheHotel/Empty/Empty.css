@@ -1,0 +1,10 @@
+.empty{
+    display: flex;
+    height: 5vh;
+    margin-top: 1%;
+    width: 100%;
+}
+.empty .first{
+    width: 50%;
+    border-right: 1px solid purple;
+}

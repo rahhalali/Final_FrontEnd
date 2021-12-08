@@ -1,10 +1,23 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar";
-function TheHotel(props) {
+import Footer from "../Footer/Footer";
+import TheHotelTitle from "./TheHotelTitle/TheHotelTitle";
+import './TheHotel.css';
+import Image from "./Image/Image";
+import Description from "./Description/Description";
+import Events from "./Events/Events";
+function TheHotel() {
     return (
-        <div>
+        <div className='TheHotel'>
             <Navbar/>
-            TheHotel
+                <TheHotelTitle />
+                <Image/>
+            <div className='TheHotel-container'>
+                <Description/>
+                <Events/>
+            </div>
+
+            <Footer/>
         </div>
     );
 }

@@ -3,6 +3,7 @@ import './Footer.css'
 import {AiFillInstagram, FaFacebookF, IoLogoWhatsapp, AiFillLinkedin} from "react-icons/all";
 import {Link} from "react-router-dom";
 
+
 function Footer(props) {
     return (
         <footer >

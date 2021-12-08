@@ -6,9 +6,11 @@ import Meeting from '../Images/meeting.jpeg';
 import Spa from '../Images/spa.jpeg';
 import './Departments.css';
 import DepartmentsTitle from "./DepartmentsTitle";
+import {useNavigate} from "react-router";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 function Departments(props) {
+    const navigate=useNavigate();
     useEffect(()=>{
         AOS.init({duration:2000})
     },[])
@@ -16,7 +18,7 @@ function Departments(props) {
         <>
         <DepartmentsTitle />
             <div className="boxes">
-                <div className='div div1' data-aos="zoom-in-right">
+                <div className='div div1' data-aos="zoom-in-right" onClick={()=>navigate('/rooms-suites')}>
                     <img src={Suites} alt="img" />
                         <p className="overlay">
                         <span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css'
-import Image from '../Images/NewRoyal.png'
+import Image from '../Home/Images/NewRoyal.png'
 import Links from "../Links/Links";
 import {Link} from "react-router-dom";
 function Navbar() {
@@ -8,9 +8,7 @@ function Navbar() {
         <div className="navbar" >
         <nav>
             <div className="logo">
-                <Link to='/'><img  src={Image}
-                                   alt="Logo"
-                /></Link>
+                <Link to='/'><img  src={Image} alt="Logo"/></Link>
             </div>
             <div className="Btns">
                 <div className="Btn-inner">
@@ -20,9 +18,10 @@ function Navbar() {
                     </div>
 
                    <div className="btn2">
-                       <button className="booking">
+                       <Link to='/rooms-suites/booking'><button className="booking">
                            BOOKING AT LE ROYAL
-                       </button> </div>
+                       </button></Link> </div>
+
                 </div>
             </div>
         </nav>

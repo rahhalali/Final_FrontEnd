@@ -27,19 +27,21 @@
     padding-left: 0.5%;
     border: unset;
     justify-content: space-between;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(20px);
 
 }
 .about-us .inner .description p.about-desc{
     margin:8% 0 2% 0;
     padding-left: 5px;
-    /*height: 30px;*/
-    border-left: 2px solid rgba(255,0,0,0.5);
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 3px solid rgba(255,0,0,0.5);
 
     color: white;
 }
 .about-us .inner .description h1{
     padding:1% 1% 4% 0;
+    font-size: 37px;
 }
 .about-us .inner .description .owner{
     display: flex;
@@ -48,7 +50,7 @@
 
 }
 .about-us .inner .description .whole-desc{
-    color: white;
+    color: #171717;
     font-size: 20px;
 }
 .about-us .inner .description .owner .desc{

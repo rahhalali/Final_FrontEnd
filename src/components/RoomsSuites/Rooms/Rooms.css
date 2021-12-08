@@ -1,0 +1,9 @@
+.rooms{
+    width: 70%;
+    margin:1% auto 5% auto;
+}
+.rooms-room{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

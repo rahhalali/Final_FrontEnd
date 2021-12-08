@@ -1,0 +1,11 @@
+.date{
+    text-align: center;
+    color: purple;
+    font-family: 'Cairo', sans-serif;
+}
+.date h3{
+    font-size: 33px;
+}
+.date p{
+    font-size: 25px;
+}

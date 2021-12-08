@@ -1,0 +1,42 @@
+
+.event_left .events-both{
+    display: flex;
+    flex-direction: row;
+    color: #99458e;
+    font-family:'Droid Sans';
+}
+.events-event .events-both .left,
+.events-event .events-both .right{
+    flex: 1;
+    height: 30vh;
+}
+.events-event .events-both .right .right-inner{
+    padding: 4%;
+    height: 15vh;
+    font-size: 18px;
+    overflow: hidden;
+}
+.events-event .events-both .right .right-inner p{
+    margin-top: 2%;
+    line-height: 1.4
+}
+.events-event .events-both .left{
+
+    border-right: 1px solid purple;
+}
+.events-event .events-both .left .Image-container,
+.events-event .events-both .right .Image-container{
+    padding: 3%;
+    height: 25vh;
+}
+.events-event .events-both .right{
+    display: flex;
+    align-items: center;
+}
+
+.events-event .events-both .left .Image-container img,
+.events-event .events-both .right .Image-container img {
+    height: 100%;
+    width: 100%;
+}
+

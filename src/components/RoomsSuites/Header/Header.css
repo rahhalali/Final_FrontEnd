@@ -1,0 +1,17 @@
+.rooms-suites-header{
+    width: 50%;
+    margin:9% auto 0 auto;
+
+}
+.rooms-suites-header h1{
+    color: purple;
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    margin-bottom: 2%;
+}
+
+.rooms-suites-header p
+{
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}

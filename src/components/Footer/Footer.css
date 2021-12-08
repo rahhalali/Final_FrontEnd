@@ -20,6 +20,7 @@ footer{
 .facebook-icons{
     color: purple;
     display: inline-block;
+    margin-top: 0.5%;
     padding:3px;
     width: 30%;
     text-align: center;
@@ -64,6 +65,7 @@ footer{
 }
 .footer-inner .contain{
     text-align: center;
+    margin-left: -0.8%;
 }
 .footer-inner .scrolling{
     margin:auto;
@@ -71,7 +73,7 @@ footer{
 .footer-inner .scrolling .scrolling-inner{
     width: 4px;
     height: 10px;
-    margin:auto;
+    margin: 0 auto;
     background-color: gray;
     position: relative;
     top: 4px;
@@ -101,7 +103,7 @@ footer{
 }
 .footer-inner .events{
     width: 30%;
-    margin-top: 0.5%;
+    margin-top: 1%;
 }
 .footer-inner .events .events-inner{
     width: 70%;

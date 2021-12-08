@@ -1,0 +1,39 @@
+.events-both-left-right{
+    display: flex;
+    flex-direction: row;
+    color: #99458e;
+    font-family:'Droid Sans';
+}
+.event-left-left,.event-right-right{
+    height: 30vh;
+    flex: 1;
+}
+.event-left-left .left_event {
+    padding: 4%;
+    height: 15vh;
+    font-size: 18px;
+    overflow: hidden;
+}
+.event-left-left .left_event p{
+    margin-top: 2%;
+    line-height: 1.4
+}
+.event-right-right .right-event-Image-container{
+    padding: 3%;
+    height: 25vh;
+}
+.event-right-right .right-event-Image-container img{
+    width: 100%;
+    height: 100%;
+}
+.event-left-left{
+    border-right: 1px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.event-left-left .left_event{
+     height: auto;
+    text-align: right;
+
+}

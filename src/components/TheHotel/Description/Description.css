@@ -1,0 +1,19 @@
+.TheHotel .TheHotel-container{
+    margin:2% auto;
+    width: 70%;
+    color: #565555;
+
+}
+.TheHotel .TheHotel-container p.text{
+line-height: 2;
+
+}
+
+p.text .read-or-hide{
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+}
+p.text{
+    font-size: 17px;
+}
