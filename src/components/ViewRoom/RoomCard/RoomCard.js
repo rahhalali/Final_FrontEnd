@@ -1,14 +1,21 @@
 import React from 'react';
 import './RoomCard.css';
-import {URL_IMG} from "../../../Api/Api";
+import {URL_IMG} from "../../Api/Api";
 import Buttons from "./Buttons/Buttons";
-import {useParams} from "react-router";
 import {useNavigate} from "react-router";
+import {remainingRooms, viewRoomById} from "../../Redux/RoomSlice";
+import {useDispatch} from "react-redux";
 function RoomCard(props) {
-    const {name}=useParams();
     const navigate =useNavigate();
+    const dispatch=useDispatch();
     return (
-        <div className='room-card' onClick={()=>navigate(`/rooms/details/${props.id}/type/${props.view_id}`)}>
+        <div className='room-card'
+             onClick={()=> {navigate(`/rooms/details/${props.id}/type/${props.view_id}`);
+        dispatch(viewRoomById(props.id));
+        dispatch(remainingRooms({id:props.id,Id:props.view_id}));
+        window.location.reload();
+        }}
+        >
             <div className='room-card-inner'>
                 <div className='room-image'>
                     <img src={`${URL_IMG}${props.picture}`} alt=''/>
@@ -36,7 +43,7 @@ function RoomCard(props) {
                             </td>
                         </tr>
                     </table>
-                    {name ? <Buttons />: ""}
+                     <Buttons />
                 </div>
 
             </div>

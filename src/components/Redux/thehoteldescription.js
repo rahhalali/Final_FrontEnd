@@ -3,8 +3,11 @@ import {URL} from '../Api/Api'
 export const eventAsync = createAsyncThunk(
     "description/eventAsync",
     async (payload) => {
-        const response = await fetch(`${URL}/all/events`, {
-            method: "GET",
+        const response = await fetch(`${URL}/all/events`,{
+            headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+              }
         });
         const result = await response.json();
         console.log('result',result);

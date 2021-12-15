@@ -1,0 +1,10 @@
+.view-room-title{
+    text-align: center;
+    margin-top:9%;
+    margin-bottom: 2.7%;
+}
+.view-room-title .header{
+    font-family: 'Yellowtail', cursive;
+    color: purple;
+    font-size: 50px;
+}

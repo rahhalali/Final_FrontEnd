@@ -26,6 +26,8 @@ function Rooms(props) {
                                       views={room.views}
                                       picture={room.picture}
                                       title={room.types}
+                                      id={room.id}
+                                      view_id={room.view_id}
                             />
                         )
                     })

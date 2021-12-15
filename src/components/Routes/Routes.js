@@ -7,6 +7,7 @@ import Home from "../Home/Home";
 import News from "../News/News";
 import TheHotel from "../TheHotel/TheHotel";
 import RoomsSuites from "../RoomsSuites/RoomsSuites";
+import ViewRoom from "../ViewRoom/ViewRoom";
 
 
 function Routers(props) {
@@ -20,6 +21,8 @@ function Routers(props) {
                 <Route path="/thehotel" element={<TheHotel />} />
                 <Route path="/rooms-suites" element={<RoomsSuites />} />
                 <Route path="/rooms-suites/:name" element={<RoomsSuites />} />
+                {/*<Route path="/rooms/details/:id" element={<ViewRoom />} />*/}
+                <Route path="/rooms/details/:id/type/:Id" element={<ViewRoom />} />
             </Routes>
         </div>
     )

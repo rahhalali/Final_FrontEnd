@@ -12,6 +12,7 @@ export const NewsAddAsync = createAsyncThunk(
         return { result: result };
     }
 );
+
 const NewsSlice = createSlice({
     name: "news",
     initialState: {

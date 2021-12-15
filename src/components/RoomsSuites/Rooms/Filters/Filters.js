@@ -23,7 +23,7 @@ function Filters(props) {
     dispatch(getTypesAsync());
     dispatch(getViewsAsync());
     },[dispatch])
-    console.log(filter);
+
     return (
         <div className='filters'>
             <div className='filters-search'>

@@ -4,17 +4,13 @@ import Video from "./Videos/login.mp4";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "../Schema/Schema";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import { loginAsync } from "../Redux/todoSlice";
-import {useNavigate} from "react-router";
-
-
-
 
 const Login = () => {
-  const navigate=useNavigate();
-  const login=useSelector((state)=>state.login);
+
   const dispatch = useDispatch();
+
   const {
     register,
     handleSubmit,
@@ -26,17 +22,15 @@ const Login = () => {
     dispatch(loginAsync(data));
   };
   useEffect(()=>{
-    if(login.logged_in === true){
-      navigate('/');
-    }
-  },[login])
+
+  },[])
 
   return (
       <div className="body">
         <video autoPlay loop muted>
           <source src={Video} type="video/mp4"/>
         </video>
-        <form onSubmit={handleSubmit(submitForm)}>
+          <form onSubmit={handleSubmit(submitForm)}>
           <div className="box">
             <h2>Login</h2>
             <div className="inputbox">

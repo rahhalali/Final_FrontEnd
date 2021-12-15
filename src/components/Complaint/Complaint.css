@@ -1,0 +1,137 @@
+
+.click-to-chat--btn {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    float: left;
+    width: 50px;
+    background-color: rgba(128, 0, 128, 0.8);
+    text-align: center;
+    transition: all 200ms cubic-bezier(0.56, 1.56, 0.9, 0.96);
+    overflow: hidden;
+    border-radius: 50%;
+}
+.click-to-chat--btn:hover {
+    background-color: #a359b7;
+    border-radius: 20px;
+    animation: pulsecolor 1500ms infinite;
+}
+.click-to-chat--btn:hover .click-text {
+    width: calc(100% - 50px);
+    display: block;
+    animation: fader 600ms forwards;
+}
+.click-to-chat--btn:hover .svg-container {
+    width: 50px;
+}
+.click-to-chat--btn:hover .svg-container svg {
+    fill: #109ed9;
+    animation: pulsecolor 1800ms cubic-bezier(0.56, 1.56, 0.9, 0.96) infinite;
+}
+.click-to-chat--btn.message-1:hover {
+    width: 155px;
+}
+.click-to-chat--btn.message-1 .click-text div.message-1-text {
+    display: block;
+}
+.click-to-chat--btn.message-1 .svg-container .chat-icon,
+.click-to-chat--btn.message-1 .svg-container .crc-icon {
+    top: 12px;
+    left: 10px;
+    max-width: 28px;
+}
+.click-to-chat--btn.message-1 .svg-container .chat-icon {
+    display: block;
+}
+.click-to-chat--btn.message-1 .svg-container .crc-icon {
+    display: none;
+}
+.click-to-chat--btn.message-2:hover {
+    width: 160px;
+}
+.click-to-chat--btn.message-2 .click-text div.message-2-text {
+    display: block;
+}
+.click-to-chat--btn.message-2 .svg-container .chat-icon,
+.click-to-chat--btn.message-2 .svg-container .crc-icon {
+    top: 12px;
+    left: 10px;
+    max-width: 28px;
+}
+.click-to-chat--btn.message-2 .svg-container .chat-icon {
+    display: none;
+}
+.click-to-chat--btn.message-2 .svg-container .crc-icon {
+    display: block;
+}
+.click-to-chat--btn .click-text {
+    float: left;
+    height: 50px;
+    text-align: right;
+    display: none;
+}
+.click-to-chat--btn .click-text .message-1-text,
+.click-to-chat--btn .click-text .message-2-text {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+    font-family: Arial, serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 125%;
+    color: white;
+    display: none;
+}
+.click-to-chat--btn .click-text .message-1-text span,
+.click-to-chat--btn .click-text .message-2-text span {
+    float: right;
+    clear: both;
+}
+.click-to-chat--btn .click-text .message-1-text span:first-child,
+.click-to-chat--btn .click-text .message-2-text span:first-child {
+    font-family: Roboto, Arial, serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.click-to-chat--btn .click-text .message-1-text span:last-child,
+.click-to-chat--btn .click-text .message-2-text span:last-child {
+    font-family: Roboto, Arial, serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.click-to-chat--btn .svg-container {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.click-to-chat--btn .svg-container .chat-icon {
+    display: none;
+}
+.click-to-chat--btn .svg-container .crc-icon {
+    display: none;
+}
+.click-to-chat--btn .svg-container svg {
+    position: relative;
+    fill: #ffffff;
+}
+
+@keyframes fader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes pulsecolor {
+    0% {
+        fill: #ffffff;
+    }
+    50% {
+        fill: purple;
+    }
+    100% {
+        fill: #ffffff;
+    }
+}

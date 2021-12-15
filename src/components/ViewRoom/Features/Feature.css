@@ -1,0 +1,42 @@
+.info-feature-table{
+}
+.td-width{
+    width:20%;
+    padding:7px 3px;
+    border-bottom: 1px solid purple;
+}
+.td-height{
+    padding:7px 3px;
+    border-bottom: 0.5px solid #b7b5b5;
+    color: #5e5c5c;
+}
+.heading{
+    position: relative;
+}
+span.fb{
+    display: block;
+    position: absolute;
+    top: 0px;
+    padding:5px 0;
+}
+.span-buttons{
+    display: flex;
+    width: 50%;
+    margin: 2% auto;
+    justify-content: space-between;
+}
+.span-buttons button{
+    padding :12px;
+    font-size: 15px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    color: #742f8b;
+    transition: 500ms;
+    cursor: pointer;
+}
+.span-buttons button:hover{
+    background: #692280;
+    transition: 500ms;
+    color: white;
+}
